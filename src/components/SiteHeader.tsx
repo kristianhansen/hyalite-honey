@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/hyalite-honey-logo.png";
 
 const navLinks = [
   { label: "Home", href: "#hero" },
@@ -28,7 +29,8 @@ const SiteHeader = () => {
       }`}
     >
       <div className="section-container flex items-center justify-between h-16 md:h-20 px-4 md:px-8">
-        <a href="#hero" className="text-charcoal-foreground font-heading font-bold text-xl tracking-widest uppercase">
+        <a href="#hero" className="flex items-center gap-3 text-charcoal-foreground font-heading font-bold text-xl tracking-widest uppercase">
+          <img src={logo} alt="Hyalite Honey" className="h-10 w-auto" />
           Hyalite Honey
         </a>
 
